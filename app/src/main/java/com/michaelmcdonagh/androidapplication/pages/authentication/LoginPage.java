@@ -25,8 +25,7 @@ public class LoginPage extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginPage.this, RegisterPage.class);
-                startActivity(intent);
+                startActivity(new Intent(LoginPage.this, RegisterPage.class));
                 finish();
             }
         });
@@ -34,8 +33,7 @@ public class LoginPage extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginPage.this, Homepage.class);
-                startActivity(intent);
+                startActivity(new Intent(LoginPage.this, Homepage.class));
                 finish();
             }
         });

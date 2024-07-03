@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#191919">
+    android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="58dp"
         android:orientation="horizontal"
@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#D80000"
+            android:background="#787878"
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <ImageButton
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#A87E7E"
+            android:background="#424242"
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <ImageButton
@@ -35,7 +35,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#AA4545"
+            android:background="#656565"
             app:srcCompat="@drawable/ic_launcher_foreground" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="67dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="603dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            tools:layout_editor_absoluteX="261dp"
+            tools:layout_editor_absoluteY="180dp"
+            tools:srcCompat="@drawable/settings_icon" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
